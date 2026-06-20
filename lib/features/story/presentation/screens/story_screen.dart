@@ -4,6 +4,7 @@ import 'package:peblo_ai_story_buddy/core/core.dart';
 import 'package:peblo_ai_story_buddy/features/audio/domain/enums/audio_state.dart';
 import 'package:peblo_ai_story_buddy/features/audio/presentation/controllers/audio_controller.dart';
 import 'package:peblo_ai_story_buddy/features/buddy/presentation/widgets/buddy_widget.dart';
+import 'package:peblo_ai_story_buddy/features/quiz/domain/states/quiz_state.dart';
 import 'package:peblo_ai_story_buddy/features/quiz/presentation/controllers/quiz_controller.dart';
 import 'package:peblo_ai_story_buddy/features/quiz/presentation/widgets/quiz_section.dart';
 import 'package:peblo_ai_story_buddy/shared/widgets/animated_sound_wave.dart';

@@ -55,7 +55,7 @@ abstract final class AppTheme {
       ),
 
       // ── Card ────────────────────────────────────────────────────────────────
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         color: AppColors.cardBackground,
         elevation: 8,
         shadowColor: AppColors.shadow,

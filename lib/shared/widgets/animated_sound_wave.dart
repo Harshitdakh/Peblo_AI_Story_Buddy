@@ -1,3 +1,4 @@
+import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:peblo_ai_story_buddy/core/core.dart';
@@ -56,8 +57,8 @@ class _AnimatedSoundWaveState extends State<AnimatedSoundWave>
                   // Phase offsets to make wave look natural
                   final offset = (index / AppConstants.soundWaveBarCount) * 2 * 3.14159;
                   final sineVal = (index % 2 == 0)
-                      ? (_controller.value * 2 * 3.14159 + offset).sin()
-                      : (_controller.value * 2 * 3.14159 - offset).sin();
+                      ? math.sin(_controller.value * 2 * 3.14159 + offset)
+                      : math.sin(_controller.value * 2 * 3.14159 - offset);
 
                   final normalized = (sineVal + 1) / 2; // 0.0 to 1.0
                   final height = AppConstants.soundWaveMinHeight +

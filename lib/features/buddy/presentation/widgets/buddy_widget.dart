@@ -124,7 +124,7 @@ class _BuddyWidgetState extends ConsumerState<BuddyWidget>
     if (mood.isSad) {
       child = child
           .animate(onPlay: (controller) => controller.repeat(max: 3))
-          .shake(hz: 8, curve: Curves.easeInOutCubic, amount: 6);
+          .shake(hz: 8, curve: Curves.easeInOutCubic, offset: const Offset(6, 0));
     }
 
     return Semantics(

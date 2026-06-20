@@ -182,7 +182,7 @@ class _QuizSectionState extends ConsumerState<QuizSection> {
     if (isWrongAnswerSelected) {
       cardContent = cardContent
           .animate()
-          .shake(hz: 8, amount: 6, duration: const Duration(milliseconds: 400));
+          .shake(hz: 8, offset: const Offset(6, 0), duration: const Duration(milliseconds: 400));
     }
 
     return cardContent
